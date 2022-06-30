@@ -11,12 +11,13 @@ package model;
 public class Video implements IValidacion, IEliminacion {
 
     @Override
-    public void validar(){
+    public boolean validar(){
         System.out.println("El video fue validado!");
+        return true;
     }
 
     @Override
-    public void eliminar() {
-        System.out.println("Eliminado el video malo!");
+    public boolean eliminar() {
+        System.out.println("Eliminado el video malo!"); return true;
     }
 }

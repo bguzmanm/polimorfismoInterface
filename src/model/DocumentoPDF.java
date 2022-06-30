@@ -26,12 +26,14 @@ public class DocumentoPDF extends Documento {
     }
 
     @Override
-    public void validar() {
+    public boolean validar() {
         System.out.println("El documento PDF con titulo " + getTitulo() + " ha sido validado");
+        return true;
     }
 
     @Override
-    public void eliminar() {
+    public boolean eliminar() {
         System.out.println("El documento PDF con titulo " + getTitulo() + " ha sido eliminado");
+        return true;
     }
 }

@@ -10,5 +10,5 @@ package model;
  */
 public interface IEliminacion {
 
-    public void eliminar();
+    public boolean eliminar();
 }

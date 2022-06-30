@@ -24,8 +24,8 @@ public abstract class Documento implements IValidacion, IEliminacion {
     }
 
     @Override
-    public abstract void validar();
+    public abstract boolean validar();
 
     @Override
-    public abstract void eliminar();
+    public abstract boolean eliminar();
 }

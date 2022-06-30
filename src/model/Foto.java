@@ -10,12 +10,14 @@ package model;
  */
 public class Foto implements IValidacion, IEliminacion {
     @Override
-    public void validar() {
+    public boolean validar() {
         System.out.println("Estamos validando la foto... foto validada");
+        return true;
     }
 
     @Override
-    public void eliminar() {
+    public boolean eliminar() {
         System.out.println("Eliminada la pinche foto mala");
+        return true;
     }
 }

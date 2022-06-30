@@ -21,10 +21,14 @@ public class ServicioEliminacion {
         lista.add(e);
     }
 
-    public void del(){
+    public boolean del(){
+        boolean retorno = true;
         for (IEliminacion e: lista) {
-            e.eliminar();
+            if (!e.eliminar()){
+                retorno = false;
+            }
         }
+        return retorno;
     }
 
 }

@@ -1,6 +1,5 @@
 package service;
 
-import model.Documento;
 import model.IValidacion;
 
 import java.util.ArrayList;
@@ -22,9 +21,17 @@ public class ServicioValidacion {
         lista.add(d);
     }
 
-    public void validar(){
+    public List<IValidacion> getLista() {
+        return lista;
+    }
+
+    public boolean validar(){
+        boolean valido = true;
         for (IValidacion v: lista ) {
-            v.validar();
+            if (v.validar() == false){
+                valido = false;
+            }
         }
+        return valido;
     }
 }

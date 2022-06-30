@@ -29,7 +29,6 @@ public class Main {
 
         sc.validar();
 
-
         ServicioEliminacion se = new ServicioEliminacion();
 
         se.add(doc1);
@@ -39,7 +38,6 @@ public class Main {
         se.add(f);
 
         se.del();
-
 
     }
 }

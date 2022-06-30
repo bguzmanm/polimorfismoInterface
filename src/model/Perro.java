@@ -25,13 +25,15 @@ public class Perro implements IValidacion, IEliminacion {
     }
 
     @Override
-    public void validar() {
+    public boolean validar() {
         System.out.println("El perrito fue validado!");
+        return true;
     }
 
 
     @Override
-    public void eliminar() {
+    public boolean eliminar() {
         System.out.println("Perro malo!");
+        return true;
     }
 }

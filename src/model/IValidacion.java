@@ -10,6 +10,6 @@ package model;
  */
 public interface IValidacion {
 
-    public void validar();
+    public boolean validar();
 
 }
